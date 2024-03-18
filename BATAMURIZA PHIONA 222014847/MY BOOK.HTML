@@ -1,0 +1,134 @@
+<html>
+<head>
+	<title>My Book</title>
+</head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<body bgcolor="skyblue">
+	</body>
+    <p>
+    	<center>
+    	<ul style="list-style-type: none;  padding: 0;">
+        <li style="display: inline; background-color:skyblue; margin-right: 10px"><a href="./home.html">HOME</a></li>
+        <li style="display: inline; background-color:skyblue; margin-right: 10px"><a href="./about.html">ABOUT</a></li>
+        <li style="display: inline; background-color:skyblue; margin-right: 10px"><a href="./contact.html">CONTACT</a></li>
+        <li style="display: inline; background-color:skyblue; margin-right: 10px"><a href="./services.html">SERVICES</a></li>
+        <li style="display: inline; background-color:skyblue; margin-right: 10px"><a href="./form.html">FORM</a></li>
+        <li style="display: inline; background-color:skyblue; margin-right: 10px"><a href="./table.html">TABLE</a></li>
+        <li style="display: inline; background-color:skyblue; margin-right: 10px"><a href="./book.html">MYBOOK</a></li>
+    </ul></center>
+
+	</p>
+	<h1>COMPANY MANAGEMENT SYSTEM </h1
+	<ol><h2><u><li>DATABASE</li></u></h2>
+		<p>Database Name: <b>COMPANY MANAGEMENT SYSTEM.</b></p>
+		<ul type="square"><h3><u><i><li>Tables</li></i></u></h3>
+
+			<ol type="a"><li><b>Customer TABLE</b></li>
+
+			<p>The Customer table in the company management system plays a crucial role in managing customer relationships, facilitating sales and marketing efforts, and providing personalized service to customers.<br>It serves as a central repository of customer information, enabling the company to effectively interact with and serve its clientele. 
+</p></br>
+
+			<li><b>Department TABLE.</b></li>
+
+			<p> The Department table in the company management system provides a comprehensive overview of the organizational structure, enabling effective management and coordination of departmental activities, resources, and personnel. It serves as a foundational element for organizational Customer TABLE planning, decision-making, and performance evaluation. </p> </br>
+<li><b>THE Employee TABLE.</b></li>
+
+			<p>  The Employee table in the company management system serves as a comprehensive database of employee information, enabling efficient workforce management, talent development, and organizational planning. It facilitates communication, collaboration, and decision-making across departments and levels of the organization. </p> </br>
+
+			<li><b>Product TABLE</b></li>
+
+			<p> In a company management system, the Product table is a critical component for storing and managing information about the goods or services offered. It serves as the central repository for product details that are essential for various functions within the company. 
+</p></br>
+
+			<li><b>Supplier TABLE</b></li>
+
+			<p>In a company management system, the Supplier table is crucial for managing relationships with the vendors who provide the raw materials, goods, or services necessary for your company's operations. It acts as a central repository for information about your suppliers, enabling efficient collaboration and record-keeping. 
+ </p></br>
+
+			<li><b>Admin Table</b></li></ol>
+
+			<p> Admin table database structure This is table is table that will be only created by admin and will hold other system users apart from admin  will give them email and password that they will use to login and access the project or system, and also t used to register if she/he’s don’t have an account so once you must to create account in order to login and access or use the system.
+            Note: the created Admin will not have same ability and right in the system.
+ </p></li></br>
+
+			              <h3><u><i><li>Attributes and their relationships</li></i></u></h3>
+			              <ol type="Attributes and their relationships">
+			       <b>SQL QUERIES</b></br></br>
+			       
+    <ol type="i"><li>Customer_Info  </li><br>
+
+   .CREATE TABLE Customer_Info ( <br>
+    Customer_ID INT PRIMARY KEY AUTO_INCREMENT,<br>  
+    First_Name VARCHAR(50) NOT NULL,<br>               
+    Email VARCHAR(100) UNIQUE NOT NULL,<br>            
+    Phone_Number VARCHAR(20) NOT NULL,<br>             
+    Gender CHAR(1) CHECK (Gender IN ('M', 'F')) <br>  
+); <br>
+
+
+
+    <li>PRODUCT </li><br>
+   CREATE TABLE Product (<br>
+  Product_Id INT PRIMARY KEY AUTO_INCREMENT,<br>  
+  Product_Name VARCHAR(50) NOT NULL,<br>        
+  Product_Price DECIMAL(10,2) NOT NULL<br>         
+); 
+
+<br> 
+			       
+    <li>EMPLOYEE</li><br>
+
+   CREATE TABLE Employee (<br>
+  Employee_Id INT PRIMARY KEY AUTO_INCREMENT,<br>  
+  Department_Id INT NOT NULL,<br>                   
+Department table<br> 
+  First_Name VARCHAR(50) NOT NULL,<br>               
+  Last_Name VARCHAR(50) NOT NULL,<br>                
+  Position VARCHAR(50), <br>                         
+  Gender CHAR(1) CHECK (Gender IN ('M', 'F')),<br>  
+  FOREIGN KEY (Department_Id) REFERENCES Department(Department_Id)<br> 
+Foreign key constraint<br> 
+); 
+<P><b>Reference:  
+1. Six-Step Relational Database Design Second Edition (Fidel A Captain, 2016)  2. www.erbessd-instruments.com </b>  </P>
+
+	</body>
+
+        </ul>
+		<h2><u><li>JAVA</li></u></h2>
+		
+		<ul type="square"><h3><u><i><li>Description</li></i></u></h3><br>
+			<p> In this chapter I will be describing how powerful generalpurpose programming language was used to create the analyzed system. Under this chapter I will undergo full detail of how everything will function together with database that have been describe above and how it cope with full analyzed system.  Tools used to develop this system in java programming:<br><br>
+			 <h4><u><li>Tools used to develop this system in java programming</li></u></h4>
+		
+Eclipse IDE: an integrated development environment used in computer programming. It contains a base workspace and an extensible plug-in system for customizing the environment. It is the second-most-popular IDE for Java development, and, until 2016, was the most popular.  
+JAR stands for Java Archive. It's a file format based on the popular ZIP file format and is used for aggregating many files into one. Although JAR can be used as a general archiving tool, the primary motivation for its development was so that Java applets and their requisite components.  
+</p></br>
+			              <h3><u><i><li>Forms and Images</li></i></u></h3>
+
+        </ul>
+        <P><i>CUSTOMER FORM</i></p>
+        <img src="image/CUSTOMER FORM.jpg" width=600 height=200><br>
+        <P><i>DEPARTMENT FORM</i></p>
+        <img src="image/DEPARTMENT FORM.jpg" width=600 height=200><br>
+        <P><i>PRODUCT FORM</i></p>
+        <img src="image/PRODUCT FORM.jpg" width=600 height=200><br>
+        <P><i>SUPPLIER FORM</i></p>
+        <img src="image/SUPPLIER FORM.jpg" width=600 height=200><br>
+        <P><i>SINUP FORM</i></p>
+        <img src="image/SINUP FORM.jpg" width=600 height=200><br>
+        <P><i>LOGIN FORM</i></p>
+        <img src="image/LOGIN FORM.jpg" width=600 height=200><br>
+        <P><i>MENU FORM</i></p>
+        <img src="image/MENU FORM.jpg" width=600 height=200><br>
+        <P><b>References<br> 
+1.https://www.javatpoint.com/operators-in-java<br>
+2.	www.eclipse.org>windowbuilider<br>   
+3.	www.vogella.com>article<br>   
+4.	www.formdev.com>ides>eclipse   
+</b>  </P>
+</ol>
+	<marquee><p><i><h2 style="color: white;">Prepared By:</i></p>BATAMURIZA PHIONA </h2></marquee>
+	</body>
+	</html>
